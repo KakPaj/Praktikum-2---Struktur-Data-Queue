@@ -3,7 +3,7 @@
 using namespace std;
 
 struct Customer;
-struct Service;
+struct Service;  
 int tutup = 0;
 
 struct Customer
