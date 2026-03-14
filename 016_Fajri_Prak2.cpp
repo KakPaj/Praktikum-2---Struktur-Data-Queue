@@ -126,7 +126,7 @@ void custBaru() // Function untuk menambahkan data customer baru
         else
         {
             custBaru -> prev = tailCust;
-            custBaru -> next;
+            tailCust -> next = custBaru;
             custBaru -> headServ = NULL;
             tailCust = custBaru;
         }
@@ -199,7 +199,7 @@ void dataBaru() // Function untuk total data (servuce & customer) baru
         else
         {
             custBaru -> prev = tailCust;
-            custBaru -> next;
+            tailCust -> next = custBaru;
             custBaru -> headServ = NULL;
             tailCust = custBaru;
         }
@@ -461,7 +461,7 @@ void mechanicHistory() // Function untuk menampilkan riwayat tiap-tiap montir
     {
         return;
     }
-    else 
+    else  
     {
         cout << "Pilihan tidak valid!" << endl;
         system("pause");
